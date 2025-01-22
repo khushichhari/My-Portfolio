@@ -1,0 +1,134 @@
+/* *{
+    background-color: #DCD9D4;
+ background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+ background-blend-mode: soft-light,screen;
+} */
+.header{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header-logo{
+    margin-left: 3rem;
+}
+
+nav{
+    margin-left:45rem;
+}
+
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style: none;
+    margin: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:black;
+}
+
+a:hover{
+    border-bottom: 3px solid black ;
+}
+
+.changer{
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+.changer .menu{
+    display: none;
+    cursor:pointer;
+    margin-right: 1rem;
+}
+
+.closed .close{
+   display: none;
+}
+
+
+@media (max-width:800px){
+    .header{
+        justify-content: space-between;
+    }
+    .nav{
+        display: none;
+        transition: 3s ease;
+    }
+
+    .nav active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        inset:0;
+        background-color: white;
+        transition: 1400ms ease;
+    }
+
+    ul{
+        margin: 0 auto;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 1rem;  
+    }
+
+    ul li{
+        margin-block: 2rem;
+    }
+
+    ul li a{
+        font-size: 20px;
+        color:black;
+        font-weight: bolder;
+    }
+
+    .changer .menu{
+        display: block;
+    }
+
+    .closed .close{
+        display: block;
+    }
+
+    .header-logo{
+        margin-left: .450rem;
+    }
+}
+
+
+@media (max-width : 350px){
+    
+    ul{
+        margin: 0 auto;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 1rem;  
+    }
+
+    ul li{
+        margin-block: 2rem;
+    }
+
+    ul li a{
+        font-size: 20px;
+        color:black;
+        font-weight: bolder;
+    }
+
+    .changer .menu {
+        display: block;
+        margin-right: 3rem;
+    }
+
+}

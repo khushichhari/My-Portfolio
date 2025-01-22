@@ -1,0 +1,72 @@
+/* .abt-container{
+    height: 70vh;
+    background-color: #f8f9fa;
+
+} */
+
+.abt-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Add space between the two sections */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Add some space between the sections */
+    padding: 20px;
+    height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .skills {
+    flex: 1; /* Take up 1 part of the available width */
+    max-width: 40%; /* Ensure it doesn't exceed 40% of the container */
+    margin-left: 8rem;
+    margin-top: 9rem;
+  }
+  
+  .skills h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  .skills button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color:  rgba(0, 0, 0, 0.2);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .skills button:hover {
+    background-color:  rgba(0,0,0, 0.5);
+  }
+
+  .abt-para {
+    flex: 2; /* Take up 2 parts of the available width */
+    max-width: 60%; /* Ensure it doesn't exceed 60% of the container */
+    margin-right: 8rem;
+    margin-left: 9rem;
+    margin-top: 9rem;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 540;
+
+  }
+  
+  .abt-para h1 {
+    font-size: 32px; /* Heading font size */
+    font-weight: bold; /* Make the heading bold */
+    color: black; /* Optional: Add a color to distinguish it */
+    margin-bottom: 1rem; /* Add spacing below the heading */
+    text-align: right; /* Align heading to the left */
+    margin-right: 3rem;
+  }
+  
+  .abt-para p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+  }
+  
